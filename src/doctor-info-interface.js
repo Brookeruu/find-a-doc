@@ -10,21 +10,25 @@ export function makeDocInfoCard(body) {
   // } else {
   //   accepts_new = "No";
   // }
-
+  $("#show-doctors").empty();
   for(let i = 0; i < body.data.length; i++) {
     $("#show-doctors").append(`
-      <div class="card">
-      <img src="${body.data[i].profile.image_url}" alt="Image of Doctor">
+      <div class="card align-items-center" style="width: 15rem; height:4 5rem">
+      <img class="" src="${body.data[i].profile.image_url}" alt="Image of Doctor">
       <div class="card-body id="data.practices[0].uid"
-      <h5 class="card-title">
+      <h3 class="card-title d-inline-block">
       ${body.data[i].profile.first_name}
       ${body.data[i].profile.last_name},
       ${body.data[i].profile.title}
-      </h4>
-      <h6>${body.data[i].practices[0].website}</h6>
-      <p>Accepting New Patients: ${body.data[i].practices[0].accepts_new_patients}</p>
-      <p>Location: ${body.data[i].practices[0].visit_address.street}, ${body.data[i].practices[0].visit_address.state}, ${body.data[i].practices[0].visit_address.zip} </p>
-      <p>${body.data[i].practices[0].phones[0].number}</p>
+      </h3>
+      <h6> <a href="${body.data[i].practices[0].website}" class="card-link">Website</a> </h6>
+      <p class="card-text">Accepting New Patients: ${body.data[i].practices[0].accepts_new_patients}</p>
+
+      <p>Location: ${body.data[i].practices[0].visit_address.street}</p>
+
+      <p>${body.data[i].practices[0].visit_address.state}, ${body.data[i].practices[0].visit_address.zip} </p>
+
+      <p>Phone Number:${body.data[i].practices[0].phones[0].number}</p>
       </div>
       </div>
           `);

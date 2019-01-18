@@ -1,7 +1,18 @@
-.card-body {
-
-  border-radius: 15;
+.card {
+  border-radius: 30;
   border-spacing: 15%;
+  box-shadow: 13%;
+  margin: 5px;
+  float: left;
+}
 
-  box-shadow: 13%
+
+img {
+  margin-top: 15px;
+  text-align: center;
+  width: 40%;
+}
+
+.card {
+
 }
