@@ -1,10 +1,12 @@
-## Find-A-Doc
+## Find A Doc, PDX
 
 ##### By Brooke Perry
 
-#### This app allows a user to find a nearby doctor by entering the location and symptoms.
+#### This app allows a user to find a nearby doctor by entering their symptoms or searching by name.
 
 #### Setup/Installation Requirements
+
+* You will need your own api key: visit the BetterDoctor API site (https://developer.betterdoctor.com) and click “Get a free API key”.
 
 * In the command line, clone this repository with
 ```
@@ -26,7 +28,7 @@ $ npm run start
 $ npm test
 ```
 
-<!-- ![app-name](/images/app-name.png) -->
+![find-a-doc](/img/find-a-doc-app.png)
 
 ## Known Bugs
 
