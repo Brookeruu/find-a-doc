@@ -1,18 +1,29 @@
+body {
+  /* background-color: .bg-light; */
+  font-family: 'Raleway', sans-serif;
+}
+
 .card {
   border-radius: 30;
   border-spacing: 15%;
   box-shadow: 13%;
   margin: 5px;
+  height: 40%;
+  width: 25%;
   float: left;
+  border: light rounded;
+}
+
+.card-body {
+  align-items: center;
 }
 
 
 img {
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 65%;
   text-align: center;
-  width: 40%;
-}
-
-.card {
-
+  text: center;
+  border: rounded;
 }
