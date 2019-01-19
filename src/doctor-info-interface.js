@@ -2,15 +2,9 @@ import $ from 'jquery';
 import { FindDoctor } from './find-doctor.js';
 
 export function makeDocInfoCard(body) {
-  // const accepts_new_patients = body.data.practices.accepts_new_patients;
-  // let accepts_new;
-  //
-  // if (accepts_new_patients === true) {
-  //   accepts_new = "Yes";
-  // } else {
-  //   accepts_new = "No";
-  // }
+
   $("#show-doctors").empty();
+
   for(let i = 0; i < body.data.length; i++) {
     const accepts_new_patients = body.data[i].practices[0].accepts_new_patients;
     let accepts_new;
@@ -20,11 +14,12 @@ export function makeDocInfoCard(body) {
     } else {
       accepts_new = "No";
     }
+
     $("#show-doctors").append(`
-      <div class="card shadow-sm p-3 mb-5 bg-white" style="width: 18rem; height:30rem">
+      <div class="card shadow-sm p-3 mb-5 bg-white>
       <div class="card-body" id="data.practices[0].uid">
-      <img class="" src="${body.data[i].profile.image_url}" alt="Image of Doctor">
-      <h4 class="card-title">
+      <img class="text-center" src="${body.data[i].profile.image_url}" alt="Image of Doctor">
+      <h4 class="card-title text-center">
       ${body.data[i].profile.first_name}
       ${body.data[i].profile.last_name},
       ${body.data[i].profile.title}

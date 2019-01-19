@@ -28,7 +28,7 @@ $ npm run start
 $ npm test
 ```
 
-![find-a-doc](/img/find-a-doc-app.png)
+![find-a-doc](/img/find-a-doc-screenshot.png)
 
 ## Known Bugs
 
