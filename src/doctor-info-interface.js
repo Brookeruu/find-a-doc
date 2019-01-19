@@ -33,14 +33,14 @@ export function makeDocInfoCard(body) {
       <p class="card-text text-center">Phone: ${body.data[i].practices[0].phones[0].number}</p>
       </div>
       </div>
-          `);
+      `);
+    }
   }
-}
 
-export function noMatches(body) {
+  export function noMatches(body) {
     $("#show-doctors").empty();
-  $("#show-doctors").append(`
-<div class="no-match">
-<h3>Sorry, no doctors match this search criteria</h3>
-    `)
-}
+    $("#show-doctors").append(`
+      <div class="no-match">
+      <h3>Sorry, no doctors match this search criteria</h3>
+      `)
+    }
